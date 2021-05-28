@@ -6,16 +6,16 @@ import {Button} from '../components/Button';
 export const HomeScreen = () => {
   const navigation = useNavigation();
 
+  const pages = ['List', 'Rainbow', 'Scroll', 'Input'];
+
   return (
     <SafeAreaView style={styles.safeAreaView}>
       <View style={styles.content}>
-        <Button title="List" onPress={() => navigation.navigate('List')} />
-        <Button
-          title="Rainbow"
-          onPress={() => navigation.navigate('Rainbow')}
-          buttonStyle={{ backgroundColor: 'red'}}
-        />
-        <Button title="List" onPress={() => navigation.navigate('List')} />
+        {pages.map(page => {
+          return (
+            <Button title={page} onPress={() => navigation.navigate(page)} />
+          );
+        })}
       </View>
     </SafeAreaView>
   );
