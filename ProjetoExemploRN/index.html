@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+
+    <style>
+        * { margin: 0; padding: 0; }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        .quadrado:nth-child(1) {
+            background-color: red;
+        }
+        .quadrado:nth-child(2) {
+            background-color: orange;
+        }
+        .quadrado:nth-child(3) {
+            background-color: yellow;
+        }
+        .quadrado:nth-child(4) {
+            background-color: green;
+        }
+        .quadrado:nth-child(5) {
+            background-color: turquoise;
+        }
+        .quadrado:nth-child(6) {
+            background-color: red;
+        }
+        .quadrado:nth-child(7) {
+            background-color: orange;
+        }
+
+
+        .com-float div {
+            float: left;
+        }
+
+        .com-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        hr {
+            margin-bottom: 100px;
+        }
+
+        .grow-container {
+            display: flex;
+        }
+
+        .grow-container .grow {
+            flex-grow: 1;
+            background-color: blue;
+        }
+
+        .grow-container div:not(.grow) {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="com-flex">
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+    </div>
+    <h1>onde isso aqui deve ficar?</h1>
+    <hr>
+
+    <div class="grow-container">
+        <div class="quadrado grow"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado grow"></div>
+    </div>
+
+    <hr>
+
+    <div class="com-float">
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+    </div>
+    <h1>onde isso aqui deve ficar?</h1>
+
+
+</body>
+</html>
